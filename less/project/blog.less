@@ -1,0 +1,46 @@
+.blog {
+
+    &_mainpage {
+        background-color: @darkerBlue;
+        padding: 84px 0 78px;
+
+        .blog__content {
+            display: flex;
+            position: relative;
+            margin-top: 16px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -1px;
+                top: 0;
+                width: 4px;
+                height: 46px;
+                background-color: @violet;
+            }
+        }
+
+        .blog__item {
+            position: relative;
+            padding-left: 38px;
+            width: 50%;
+
+            &:last-of-type {
+                margin-left: 18px;
+            }
+
+            &-date {
+                color: @violet;
+                font-weight: 700;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+
+            &-text {
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 1.6;
+            }
+        }
+    }
+}

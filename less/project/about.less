@@ -1,0 +1,61 @@
+.about {
+
+    &_mainpage {
+        background-color: @darkerBlue;
+        padding: 96px 0 101px;
+
+        .about__logo {
+            max-width: 236px;
+            margin-top: 87px;
+        }
+
+        .about__content {
+            margin-top: 23px;
+        }
+
+        .about__item {
+            position: relative;
+            padding-left: 39px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 67px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 25px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -7px;
+                width: 4px;
+                height: 46px;
+                background-color: @violet;
+            }
+
+            &-name {
+                color: @violet;
+                font-size: 30px;
+                font-weight: 700;   
+                margin-bottom: 37px;            
+            }
+
+            &-text {
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        .about__link {
+            color: @green;
+            font-size: 12px;
+            font-weight: 300;
+            margin-left: 38px;
+        }
+    }
+}
