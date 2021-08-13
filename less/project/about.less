@@ -56,6 +56,20 @@
             font-size: 12px;
             font-weight: 300;
             margin-left: 38px;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                right: -28px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 16px;
+                height: 17px;
+                background-image: url("../img/icons/arrow-green.png");
+                background-size: cover;
+            }
         }
     }
 }

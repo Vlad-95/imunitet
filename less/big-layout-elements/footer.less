@@ -1,68 +1,84 @@
 .footer {
     background-color: @darkBlue;
-    padding: 41px 0;
+    padding: 46px 0;
 
     &__wrap {
         display: flex;
     }
 
     .logo {
-        max-width: 131px;
+        max-width: 220px;
     }
 
     &__content {
-        padding-left: 170px;
-        padding-top: 10px;
+        padding-left: 200px;
+        margin-top: 12px;      
+        width: calc(100% - 220px); 
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;        
+
+        .footer__address {
+            &-item {
+                font-size: 13px;
+                font-weight: 300;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+
+        &-phone {
+            font-size: 15px;
+            font-weight: 600;
+            margin-left: 22%;
+        }
+
+        &-time {
+            font-size: 15px;
+            font-weight: 600;
+            margin-left: auto;
+        }
+
+        
     }
 
     &__menu {
         display: flex;
         color: @white;
         font-family: @commissioner;
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: 600;
         text-transform: uppercase;
         padding: 0;
-        margin: 0 0 20px;
+        margin: 0;
         list-style: none;
 
         &-item {
             &:not(:last-of-type) {
-                margin-right: 50px;
-            }
-        }
-    }
-
-    &__contacts {
-        display: flex;
-
-        &-item {
-            position: relative;
-            color: @white;
-            font-family: @commissioner;
-            font-size: 14px;
-            margin: 0;
-            line-height: 1;
-
-            &:not(:last-child) {
                 margin-right: 40px;
-                &:after {
-                    content: '';
-                    position: absolute;
-                    right: -21px;
-                    top: -4px;
-                    width: 1px;
-                    height: 160%;
-                    background-color: @white;
-                    opacity: 0.3;
-                }
             }
         }
     }
 
     .rights {
-        border-top: 1px solid rgba(255,255,255,0.3);
-        margin-top: 28px;
-        padding-top: 20px;
+        margin-top: 35px;
+        padding-top: 23px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -200%;
+            top: 0;
+            width: 500%;
+            height: 1px;
+            background-color: #3d474f;
+        }
 
         &__item {
             color: @white;
@@ -71,16 +87,17 @@
 
             a {
                 &:not(:last-of-type) {
-                    margin-right: 28px;
+                    margin-right: 32px;
                 }
             }
 
             &:nth-of-type(2) {
-                margin-left: 215px;
+                margin-left: 27%;
             }
+            
 
             &.siluet {
-                margin-left: auto;
+               margin-left: auto;
 
                 a {
                     position: relative;
@@ -99,24 +116,6 @@
                     }
                 }
             }
-        }
-    }
-
-    &_prod {
-        background-color: #009641;
-        padding: 17px 0 20px;
-
-        .logo {
-            max-width: 120px;
-        }
-
-        .footer__content {
-            padding-top: 33px;
-            padding-left: 181px;
-        }
-
-        .rights {
-            margin-top: 18px;
         }
     }
 }
