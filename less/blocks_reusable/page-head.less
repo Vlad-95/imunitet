@@ -1,4 +1,37 @@
 .page-head {
     background-color: @darkerBlue;
     padding: 46px 0;
+
+    .wrapper {
+        position: relative;
+    }
+
+    .tags {
+        position: absolute;
+        left: 430px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 38px;
+
+        &__item {
+            border-radius: 10px;
+            background-color: rgba(170, 142, 182, 0.2);
+            font-size: 17px;
+            color: @white;
+            padding: 11px 16px;
+            
+            &:not(:last-of-type) {
+                margin-right: 5px;
+            }
+              
+            &.current {
+                background-color: @violet;
+            }
+        }
+    }
 }
