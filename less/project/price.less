@@ -1,0 +1,113 @@
+.pricepage {
+    position: relative;
+
+    .lines {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        pointer-events: none;
+
+        &__wrap {
+            max-width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+    
+        &__item {
+            width: 1px;
+            height: 100%;
+            background-color: rgba(234, 234, 234, 0.05);
+            //background-color: @white;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            &:nth-of-type(4) {
+                right: 200px;
+            }
+
+            &:nth-of-type(3) {
+                right: 400px;
+            }
+
+            &:nth-of-type(2) {
+                right: 600px;
+            }
+
+            &:nth-of-type(1) {
+                right: 800px;
+            }
+        }
+    }
+}
+
+.price {
+    background-color: @darkerBlue;
+    border-bottom: 1px solid rgba(234, 234, 234, 0.2);      
+
+    &__item {
+        padding-bottom: 87px;
+
+        &:last-of-type {
+            padding-bottom: 101px;
+        }
+
+        &-name {
+            background-color: @darkerBlue;
+            padding-bottom: 43px;
+
+            h2 {
+                color: @violet;
+                margin: 0;
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+
+        &-row {
+            padding: 25px 0;
+
+            &:nth-of-type(even) {
+                background-color: @darkBlue;
+            }
+
+            &:nth-of-type(odd) {
+                background-color: @darkerBlue;
+            }
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 108px;
+            }
+        }
+
+        &-title {
+            color: @white;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.4;
+            width: 70%;
+        }
+
+        &-number {
+            font-size: 20px;
+            color: @violet;
+            text-align: right;
+            font-weight: 700;
+            line-height: 1.5;
+
+            .descr {
+                color: @white;
+                font-weight: 400;
+                font-size: 13px;
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+}
