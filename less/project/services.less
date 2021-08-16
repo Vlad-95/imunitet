@@ -57,3 +57,111 @@
         }
     }
 }
+
+.services-list {
+    &.head {
+        background-color: @darkerBlue;
+        padding: 23px 0 102px;
+    }
+
+    &.list {
+        background-color: @darkBlue;
+        padding: 92px 0;
+        margin-bottom: -95px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__img {
+        min-width: 366px;
+        width: 366px;
+        text-align: center;
+    }
+
+    &__content {
+        margin-left: 14px;
+        padding-left: 30px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 4px;
+            height: 46px;
+            background-color: @violet;
+        } 
+
+        p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.7;
+            margin: 25px 0;
+
+            &:first-of-type {
+                margin-top: 9px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -2px;
+            width: 4px;
+            height: 46px;
+            background-color: @violet;
+        }
+    }
+
+    &__item {
+        display: block;
+        width: calc(100% / 3);
+        text-align: center;
+        position: relative;
+        padding: 0 15px;
+        margin-bottom: 118px;
+
+        &-icon {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        &-name {
+            font-size: 20px;
+            color: @violet;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        &-link {
+            font-weight: 300;
+            font-size: 15px;
+        }
+          
+        &-count {
+            font-size: 20px;
+            color: @white;
+            opacity: 0.051;
+            font-weight: 600;
+            position: absolute;
+            top: -5px;
+            right: 59px;
+        }
+    }
+}

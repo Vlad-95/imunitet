@@ -7,6 +7,26 @@ $(document).ready(function() {
         });
     }
 
+    
+    if ($('.services-list').length) {
+        //одинаковая высота названий услуг
+        $('.services-list .services-list__item-name').matchHeight();
+
+        //счетчик количества услуг
+        $('.services-list .services-list__item').each(function() {
+            let count = $(this).index() + 1;
+
+            if(count < 10) {
+                $(this).find('.services-list__item-count').text("0" + count)
+            } else {
+                $(this).find('.services-list__item-count').text(count)
+            }
+            
+        })
+    }
+    
+
+
     //Открытие/скрытие городов в шапке
     
 
