@@ -48,6 +48,11 @@ $(document).ready(function() {
         }
     }
 
+    //одинаковая высота названий новостей
+    if($('.articlespage').length) {
+        $('.articles-list__item .articles-list__name').matchHeight();
+    }
+
 
     //Открытие/скрытие городов в шапке
     
