@@ -25,6 +25,28 @@ $(document).ready(function() {
         })
     }
     
+    //карта на странице О нас
+    if($('.aboutpage').length) {
+        ymaps.ready(init);
+        function init(){
+            // Создание карты.
+            var myMap = new ymaps.Map("about-map", {
+                center: [59.971668064132984,30.490338999999977],
+                controls: [],                
+                zoom: 4
+            });
+
+            var myPlacemark = new ymaps.Placemark([59.971668064132984,30.490338999999977], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/pin.png',
+                iconImageSize: [55, 32],
+                iconImageOffset: [-28, -16]
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+        }
+    }
 
 
     //Открытие/скрытие городов в шапке
