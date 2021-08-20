@@ -1,4 +1,4 @@
-.casespage {
+.cases-page {
     position: relative;
 
     &.detail {
@@ -353,90 +353,5 @@
             background-image: url("../img/icons/arrow-white.png");
             background-size: cover;
         }
-    }
-}
-
-.cases-team {
-    background-color: @darkBlue;
-    padding: 90px 0;
-
-    &__head {
-        margin-bottom: 60px;
-    }
-
-    &__title {
-        margin: 0 0 20px;
-        font-size: 40px;
-        font-weight: 600;
-    }
-
-    &__subtitle {
-        margin: 0;
-        font-size: 9px;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-
-    &__wrap {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    &__item {
-        width: calc(100% / 3);
-        text-align: center;
-        position: relative;
-        padding: 0 8px;
-
-        &:before {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 28px;
-            background-image: url("../img/icons/shield.png");
-            background-size: cover;
-            top: 6px;
-            left: 73px;
-        }
-
-        &:first-of-type {
-            &:after {
-                content: '';
-                position: absolute;
-                top: 29px;
-                right: 2px;
-                width: 4px;
-                height: 46px;
-                background-color: @violet;
-            }
-        }
-    }
-
-    &__img {
-        display: block;
-        text-align: center;
-        width: 220px;
-        height: 220px;
-        border-radius: 500px;
-        overflow: hidden;
-        margin: 0 auto 33px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    &__name {
-        font-size: 20px;
-        font-weight: 700;
-        color: @violet;
-    }
-
-    &__label {
-        font-weight: 300;
-        font-size: 15px;
-        margin: 8px 0 0;
     }
 }

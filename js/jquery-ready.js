@@ -26,7 +26,7 @@ $(document).ready(function() {
     }
     
     //карта на странице О нас
-    if($('.aboutpage').length) {
+    if($('.about-page').length) {
         ymaps.ready(init);
         function init(){
             // Создание карты.
@@ -49,7 +49,7 @@ $(document).ready(function() {
     }
 
     //одинаковая высота названий новостей
-    if($('.articlespage').length) {
+    if($('.articles-page').length) {
         $('.articles-list__item .articles-list__name').matchHeight();
     }
 
