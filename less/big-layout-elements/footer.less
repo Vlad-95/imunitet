@@ -126,7 +126,7 @@
 @media screen and (max-width: 1200px) {
     .footer {
         &__content {
-            padding-left: 110px;
+            padding-left: 40px;
         }
 
         &__menu {
@@ -145,23 +145,7 @@
                     margin-left: 155px;
                 }
             }
-        }
-
-        &_prod {
-            .footer__content {
-                padding-left: 110px;
-            }
-
-            .rights {
-                &__item {
-                    &:nth-of-type(2) {
-                        margin-left: 142px;
-                    }
-                }
-            }
-        }
-
-        
+        }        
     }
 }
 
@@ -175,7 +159,7 @@
         &__content {
             padding-left: 0;
             padding-top: 0;
-            margin-top: 40px;
+            margin-top: 20px;
             width: 100%;
         }
 
@@ -197,18 +181,7 @@
                     margin-left: auto;
                 }
             }
-        }
-
-        &_prod {
-            .footer__content {
-                padding-left: 0;
-                padding-top: 0;
-                margin-top: 40px;
-                width: 100%;
-            }
-        }
-
-        
+        }        
     }
 }
 
@@ -227,16 +200,27 @@
         }
 
         &__contacts {
-            flex-wrap: wrap;
+            display: block;
 
-            &-item {                
-                &:not(:last-child) {
-                    margin-bottom: 20px;
-                    &:after {
-                        display: none;
+            .footer__address {
+                margin-bottom: 20px;
+
+                &-item {
+                    &:not(:last-of-type) {
+                        margin-bottom: 10px;
                     }
                 }
             }
+
+            &-phone {
+                margin-left: 0;
+            }
+    
+            &-time {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            
         }
 
         .rights {
@@ -244,6 +228,12 @@
             align-items: flex-start;
 
             &__item {
+                a {
+                    &:not(:last-of-type) {
+                        margin-right: 20px;
+                    }
+                }
+
                 &:not(:last-of-type) {
                     margin-bottom: 20px;
                 }

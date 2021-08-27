@@ -248,7 +248,7 @@
 
     .mobile-menu {
         position: fixed;
-        z-index: 2;
+        z-index: 3;
         right: 0;
         top: 0;
         width: 70%;
@@ -467,6 +467,31 @@
 
         .burger {    
             display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        .city {
+            &__item {
+                &-content {
+                    width: 232px;
+                    padding: 10px 0 10px 30px;
+                }
+            }
+        }
+        .mobile-menu {
+            width: 85%;
+
+            &__content {
+                padding: 60px 20px 40px;
+            }
+
+            &__close {
+                top: 20px;
+                right: 20px;
+            }
         }
     }
 }
