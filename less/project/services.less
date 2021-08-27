@@ -409,3 +409,51 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .services {
+        &_mainpage {
+            padding: 70px 0;
+
+            .services__item {
+                margin: 0 30px 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        &_mainpage {
+            padding: 70px 0 20px;
+            .services__content {
+                margin: 34px -20px 0;     
+            }
+    
+            .services__item {
+                width: calc(50% - 40px);
+                margin: 0 20px 30px;
+                font-size: 12px;
+
+                &:before {
+                    top: -12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services {
+        &_mainpage {
+            .services__content {
+                margin: 34px 0 0;     
+            }
+
+            .services__item {
+                width: 100%;
+                margin: 0 0 40px;
+            }
+        }
+    }
+}
