@@ -145,11 +145,44 @@
                 <h2 class="page-subtitle">Мы на связи</h2>
 
                 <div class="map-toggle">
-                    <div class="tags__item current">Санкт-Петербург</div>
-                    <div class="tags__item">Москва</div>
+                    <div class="map-toggle__item current">Санкт-Петербург</div>
+                    <div class="map-toggle__item">Москва</div>
                     
                 </div>
             </div>
+        </div>
+
+        <div class="contacts">
+            <div class="contacts__item active" data-city="spb">
+                <div class="wrapper">
+                    <div class="contacts__head">
+                        <h2 class="contacts__title">Санкт-Петербург</h2>
+                    </div>
+                    <div class="contacts__list">
+                        <a href="javascript:;" class="contacts__list-item phone">+7 (812) 614-13-16</a>
+                        <a href="javascript:;" class="contacts__list-item mail">adv@immunitet.pro</a>
+                        <p href="javascript:;" class="contacts__list-item address">Санкт-Петербург, ул. Комиссара Смирнова д. 5/2 Вход с улицы Бобруйской</p>
+                    </div>
+                </div>
+
+                <div class="map" id="spb"></div>
+            </div>
+
+            <div class="contacts__item" data-city="mos">
+                <div class="wrapper">
+                    <div class="contacts__head">
+                        <h2 class="contacts__title">Москва</h2>
+                    </div>
+                    <div class="contacts__list">
+                        <a href="javascript:;" class="contacts__list-item phone">+7 (812) 614-13-16</a>
+                        <a href="javascript:;" class="contacts__list-item mail">adv@immunitet.pro</a>
+                        <p href="javascript:;" class="contacts__list-item address">Москва, ул. Комиссара Смирнова д. 5/2 Вход с улицы Бобруйской</p>
+                    </div>
+                </div>
+
+                <div class="map" id="mos"></div>
+            </div>
+            
         </div>
 
     
@@ -258,7 +291,7 @@
             
         </div>
     </footer>
-
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=ru_RU" type="text/javascript"></script>
     <script src="js/libs/jquery-3.2.1.min.js"></script>
     <script src="js/libs/jquery-ui.js"></script>
     <script src="js/libs/slick.min.js"></script>

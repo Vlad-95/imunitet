@@ -48,6 +48,50 @@ $(document).ready(function() {
         }
     }
 
+    if ($('.contacts-page').length) {
+        //переключение карт
+        $('.map-toggle').on('click', 'div:not(.current)', function() {
+            console.log($(this))
+            $(this).addClass('current').siblings().removeClass('current');
+            $('.contacts__item').eq($(this).index()).addClass('active').siblings().removeClass('active');
+        })
+
+        ymaps.ready(init);
+        function init(){
+            // Создание карты.
+            var spb = new ymaps.Map("spb", {
+                center: [59.962908564141586,30.353183999999914],
+                controls: [],                
+                zoom: 17
+            });
+
+            // Создание карты.
+            var mos = new ymaps.Map("mos", {
+                center: [55.752612846663226,37.62316081793495],
+                controls: [],                
+                zoom: 17
+            });
+
+            var spbPlacemark = new ymaps.Placemark([59.962908564141586,30.353183999999914], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/pin.png',
+                iconImageSize: [55, 32],
+                iconImageOffset: [-28, -16]
+            });
+            var mosPlacemark = new ymaps.Placemark([55.752612846663226,37.62316081793495], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/pin.png',
+                iconImageSize: [55, 32],
+                iconImageOffset: [-28, -16]
+            });
+
+            spb.geoObjects.add(spbPlacemark);
+            spb.behaviors.disable('scrollZoom');
+            mos.geoObjects.add(mosPlacemark);
+            mos.behaviors.disable('scrollZoom');
+        }
+    }
+
     //одинаковая высота названий новостей
     if($('.articles-page').length) {
         $('.articles-list__item .articles-list__name').matchHeight();
