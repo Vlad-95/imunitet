@@ -303,3 +303,73 @@
         filter: grayscale(1);
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .about {
+        &_mainpage {
+            padding: 70px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about {
+        &_mainpage {
+            .about__logo {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        &_mainpage {
+            padding: 70px 0 50px;
+
+            .about__content {
+                margin-top: 40px;
+            }
+
+            .about__item {
+                padding-left: 25px;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 40px;
+                }
+    
+                &:last-of-type {
+                    margin-bottom: 25px;
+                }
+
+                &-name {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+
+                &-text {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .about__link {
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        &_mainpage {
+            .about__item {
+
+                &-name {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
