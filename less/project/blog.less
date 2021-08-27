@@ -311,3 +311,59 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .blog {
+        &_mainpage {
+            padding: 70px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .blog {
+        &_mainpage {
+            padding: 70px 0 50px;
+
+            .blog__content {
+                margin-top: 40px;
+            }
+
+            .blog__item {
+                padding-left: 25px;
+
+                &-date {
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                }
+
+                &-text {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .blog {
+        &_mainpage {
+            .blog__content {
+                display: block;
+            }
+
+            .blog__item {
+                width: 100%;
+
+                &:last-of-type {
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

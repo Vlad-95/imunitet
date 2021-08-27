@@ -107,21 +107,43 @@ li:last-child {
 
 @media screen and (max-width: 1200px) {
   .block-title {
-    font-size: 30px;
-  }
+    &_mainpage {
+      h2 {
+        font-size: 60px;
+      }
 
-  .page-title {
-    font-size: 35px;
+      .count {
+        font-size: 130px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-title {
+    &_mainpage {
+      h2 {
+        font-size: 50px;
+      }
+
+      .count {
+        font-size: 110px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .block-title {
-    font-size: 25px;
-  }
+    &_mainpage {
+      h2 {
+        font-size: 40px;
+      }
 
-  .page-title {
-    font-size: 30px;
-    margin: 0 0 30px;
+      .count {
+        font-size: 100px;
+        top: -55px;
+      }
+    }
   }
 }

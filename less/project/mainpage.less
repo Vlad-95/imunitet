@@ -57,3 +57,40 @@
     }
     
 }
+
+@media screen and (max-width: 992px) {
+    .mainpage {
+        .lines {
+            display: none;
+        }
+    }
+
+    .mainpage-block__wrap {
+        display: flex;
+        align-items: flex-start;
+    
+        .block-title {
+            width: 30%;
+        }
+    
+        .mainpage-block__content {
+            width: 70%;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainpage-block__wrap {
+        display: block;
+    
+        .block-title {
+            width: 100%;
+        }
+    
+        .mainpage-block__content {
+            width: 100%;
+        }
+        
+    }
+}
