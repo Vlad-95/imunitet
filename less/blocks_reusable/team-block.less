@@ -82,3 +82,71 @@
         margin: 8px 0 0;
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+    .team-block {
+        padding: 60px 0;
+
+        &__head {
+            margin-bottom: 40px;
+        }
+
+        &__item {
+            &:before {
+                left: 0;
+            }
+
+            &:first-of-type {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-block {
+        padding: 40px 0 15px;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__item {
+            width: 50%;
+            margin-bottom: 25px;
+        }
+
+        &__img {
+            margin: 0 auto 15px;
+        }
+
+        &__name {
+            font-size: 15px;
+            font-weight: 700;
+            color: @violet;
+        }
+    
+        &__label {
+            font-weight: 300;
+            font-size: 12px;
+            margin: 8px 0 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .team-block {
+        &__title {
+            font-size: 25px;
+        }
+
+        &__img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+}
