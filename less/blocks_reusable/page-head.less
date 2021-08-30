@@ -17,6 +17,7 @@
         flex-wrap: wrap;
         align-items: center;
         margin-top: 38px;
+        padding-right: 20px;
 
         &__item {
             border-radius: 10px;
@@ -24,6 +25,7 @@
             font-size: 17px;
             color: @white;
             padding: 11px 16px;
+            margin-bottom: 5px;
             
             &:not(:last-of-type) {
                 margin-right: 5px;
@@ -76,17 +78,36 @@
 @media screen and (max-width: 1200px) {
     .page-head {
         padding: 20px 0 46px;
+
+        .tags {
+            left: 260px;
+        }
     }
 }
 
 @media screen and (max-width: 992px) {
     .page-head {
         padding: 20px 0 30px;
+
+        .tags {
+            position: static;   
+            padding-right: 0; 
+
+            &__item {
+                font-size: 15px;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
     .page-head {
         padding: 20px 0;
+
+        .tags {
+            &__item {
+                font-size: 12px;
+            }
+        }
     }
 }
