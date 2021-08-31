@@ -66,7 +66,7 @@ $(document).ready(function() {
     });
 
     $('.mobile-menu__close').click(function() {
-        $('body').removeClass('opacity-layer');
+        $('body').removeClass('opacity-layer no-scroll');
         $('.mobile-menu').hide("slide", { direction: "right" }, 500);
     })
     
