@@ -420,6 +420,39 @@
             }
         }
     }
+
+    .services-list {
+        &__img {
+            min-width: 223px;
+            width: 223px;
+        }
+
+        &__content {
+            margin-left: 60px;
+        }
+
+        &__item { 
+            &-count {
+                top: -25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service-page {
+        .lines {
+            display: none;
+        }
+    }
+
+    .services-list {
+        &__item { 
+            &-count {
+                right: 30px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -441,6 +474,44 @@
             }
         }
     }
+
+    .services-list {
+        &__head {
+            padding: 23px 0 40px;
+        }
+        
+        &__img {
+            min-width: 120px;
+            width: 120px;
+        }
+
+        &__content {
+            padding-left: 25px;
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        &__list {
+            padding: 40px 0;
+            margin-bottom: -41px;
+        }
+
+        &__item { 
+            margin-bottom: 40px;
+            width: calc(100% / 2);
+
+            &-name {
+                font-size: 15px;
+            }
+
+            &-link {
+                font-size: 12px;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -453,6 +524,56 @@
             .services__item {
                 width: 100%;
                 margin: 0 0 40px;
+            }
+        }
+    }
+
+    .services-list {
+
+        &__head {
+            .services-list__wrap {
+                display: block;
+                position: relative;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 180px;
+            min-width: auto;
+        }
+
+        &__content {
+            padding-left: 25px;
+            margin-left: 0;
+        }
+
+        &__list {
+            .services-list__wrap {
+                
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        &__item { 
+            padding: 0 5px;
+
+            &-icon {
+                max-width: 80px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &-name {
+                font-size: 12px;
+            }
+
+            &-count {
+                font-size: 15px;
             }
         }
     }
