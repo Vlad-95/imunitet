@@ -55,6 +55,10 @@
             font-weight: 400;
             padding: 16px 17px;
 
+            &.error {
+                border-color: red;
+            }
+
             &::placeholder {
                 color: @white;
                 font-family: @commissioner;
@@ -73,6 +77,10 @@
             font-family: @commissioner;
             font-weight: 400;
             padding: 16px 17px;
+
+            &.error {
+                border-color: red;
+            }
 
             &::placeholder {
                 color: @white;
@@ -101,6 +109,12 @@
             &:checked + .form__agree-text {
                 &:after {
                     opacity: 1;
+                }
+            }
+
+            &.error + .form__agree-text {
+                &:before {
+                    border-color: red;
                 }
             }
         }

@@ -142,44 +142,9 @@ $(document).ready(function() {
         $('.articles-list__item .articles-list__name').matchHeight();
     }
 
+    //маска телефона
+    if($('.form').length) {
+        $('input[name="phone"]').mask('+7(999)999-99-99')
+    }
     
-    //одинаковая высота новостей
-    // if($('.news').length) {
-    //     $('.news .news__item .news__item-content').matchHeight();
-    // };
-
-    // if($('.opportunities').length) {
-    //     $('.opportunities .opportunities__item .opportunities__item-name').matchHeight();
-    // };
-
-    // if($('#map').length) {
-    //     ymaps.ready(init);
-    //     function init(){
-    //         // Создание карты.
-    //         var myMap = new ymaps.Map("map", {
-    //             center: [59.85120307488966,30.30813975396727],
-    //             controls: ['geolocationControl'],                
-    //             zoom: 16
-    //         });
-
-    //         var myPlacemark = new ymaps.Placemark([59.85120307488966,30.30813975396727], {}, {
-    //             iconLayout: 'default#image',
-    //             iconImageHref: 'img/icons/map-marker.png',
-    //             iconImageSize: [55, 57],
-    //             iconImageOffset: [-28, -45]
-    //         });
-
-    //         myMap.geoObjects.add(myPlacemark);
-    //     }
-    // };
-
-    
-
-    //прикрепление файла
-    // $('.form__file input').on('change', function(e) {
-    //     let filename = $(this)[0].files[0].name;
-
-    //     $(this).siblings('.name').text(filename);
-        
-    //   })
 });

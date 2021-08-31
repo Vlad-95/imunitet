@@ -264,7 +264,7 @@
                 <form action="" class="form feedback">
                     <div class="form__row form__row_3">
                         <label class="form__item">
-                            <input type="text" class="form__input" placeholder="Ваше имя">
+                            <input type="text" class="form__input error" placeholder="Ваше имя">
                         </label>
     
                         <label class="form__item">
@@ -276,13 +276,13 @@
                         </label>
                     </div>
                     <label class="form__item">
-                        <textarea name="" id="" placeholder="Текст заявки"></textarea>
+                        <textarea name="" id="" placeholder="Текст заявки" class="error"></textarea>
                     </label>
                     
     
                     <div class="form__footer">
                         <label class="form__agree">
-                            <input type="checkbox" name="agree" id="">
+                            <input type="checkbox" name="agree" id="" class="error">
                             <div class="form__agree-text">- я соглашаюсь с <a href="javascript:;">Политикой конфиденциальности</a></div>
                         </label>
     
@@ -361,6 +361,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=ru_RU" type="text/javascript"></script>
     <script src="js/libs/jquery-3.2.1.min.js"></script>
     <script src="js/libs/jquery-ui.js"></script>
+    <script src="js/libs/jquery.maskedinput.js"></script>
     <script src="js/libs/jquery.matchHeight-min.js"></script>
     <script src="js/jquery-ready.js"></script>
 </body>
