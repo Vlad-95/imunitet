@@ -58,6 +58,7 @@
             padding: 11px 16px;
             transition: 0.3s;
             border: 1px solid rgba(170, 142, 182, 0.2);
+            margin-bottom: 5px;
             
             &:not(:last-of-type) {
                 margin-right: 5px;
@@ -82,6 +83,10 @@
         .tags {
             left: 260px;
         }
+
+        .map-toggle {
+            left: 320px;
+        }
     }
 }
 
@@ -97,6 +102,14 @@
                 font-size: 15px;
             }
         }
+
+        .map-toggle {
+            position: static;
+
+            &__item {
+                font-size: 15px;
+            }
+        }
     }
 }
 
@@ -105,6 +118,12 @@
         padding: 20px 0;
 
         .tags {
+            &__item {
+                font-size: 12px;
+            }
+        }
+
+        .map-toggle {
             &__item {
                 font-size: 12px;
             }
