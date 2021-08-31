@@ -411,6 +411,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .service-page {
+        .team-block {
+            padding: 70px 0;
+    
+            &__title {
+                font-size: 40px;
+            }
+        }
+    
+    }
     .services {
         &_mainpage {
             padding: 70px 0;
@@ -437,6 +447,34 @@
             }
         }
     }
+
+    .services-detail {
+        &__img {
+            min-width: 223px;
+            width: 223px;
+        }
+
+        &__content {
+            margin-left: 60px;
+        }
+
+        &__descr {
+            &-head {
+                min-width: auto;
+                width: 33%;
+            }
+
+            .services-detail__list {
+                width: 67%;
+            }
+
+            .services-detail__item {
+                &-content {
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -453,9 +491,36 @@
             }
         }
     }
+
+    .services-detail {
+        &__descr {
+            &-head {
+                width: 30%;
+            }
+
+            &-title {
+                font-size: 50px;
+            }
+
+            .services-detail__list {
+                width: 70%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .service-page {
+        .team-block {
+            padding: 40px 0;
+    
+            &__title {
+                font-size: 30px;
+            }
+        }
+    
+    }
+
     .services {
         &_mainpage {
             padding: 70px 0 20px;
@@ -512,9 +577,76 @@
         }
     }
 
+    .services-detail {
+        &__head {
+            padding: 23px 0 40px;
+        }
+
+        &__img {
+            min-width: 120px;
+            width: 120px;
+        }
+
+        &__content {
+            padding-left: 25px;
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        &__descr {
+            padding: 40px 0;
+            .services-detail__wrap {
+                display: block;
+            }
+
+            &-head {
+                width: 100%;
+            }
+
+            &-title {
+                font-size: 40px;
+                margin: 0 0 13px;
+            }
+
+            .services-detail__list {
+                width: 100%;
+                margin-top: 40px;
+            }
+
+            .services-detail__item {
+                &-date {
+                    font-size: 12px;
+                    margin-bottom: 14px;
+                }
+    
+                &-text {
+                    margin-bottom: 10px;
+                    p {
+                        font-size: 12px;
+                    }
+                }
+    
+                &-more {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
+    .service-page {
+        .team-block {    
+            &__title {
+                font-size: 25px;
+            }
+        }
+    
+    }
+
     .services {
         &_mainpage {
             .services__content {
@@ -574,6 +706,47 @@
 
             &-count {
                 font-size: 15px;
+            }
+        }
+    }
+
+    .services-detail {
+        &__head {
+            .services-detail__wrap {
+                display: block;
+                position: relative;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 180px;
+            min-width: auto;
+        }
+
+        &__content {
+            padding-left: 25px;
+            margin-left: 0;
+        }
+
+        &__descr {
+            .services-detail__item {
+                display: block;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 60px;
+                }    
+
+                &-img {
+                    margin-bottom: 20px;
+                    display: block;
+                }
+
+                &-content {
+                    padding-left: 0;
+                }
             }
         }
     }
