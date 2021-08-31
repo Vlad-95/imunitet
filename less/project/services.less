@@ -70,14 +70,17 @@
             background-color: #564461;
         }
 
-        &:after {
-            content: '';
-            position: absolute;
-            left: calc(61% - 4px);
-            top: -9px;
-            width: 4px;
-            height: 46px;
-            background-color: @green;
+        .wrapper {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                top: -105px;
+                right: 397px;
+                width: 4px;
+                height: 46px;
+                background-color: @green;
+            }
         }
 
         .services__content {
@@ -314,7 +317,21 @@
 
     &__descr {
         background-color: #eff4f8;
-        padding: 95px 0 90px;        
+        padding: 95px 0 90px;  
+        
+        .wrapper {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: -105px;
+                right: 397px;
+                width: 4px;
+                height: 46px;
+                background-color: @green;
+            }
+        }
 
         .services-detail__wrap {
             display: flex;
@@ -401,7 +418,7 @@
                     bottom: 0;
                     margin: auto;
                     width: 16px;
-                    height: 17px;
+                    height: 16px;
                     background-image: url("../img/icons/arrow-green.png");
                     background-size: cover;
                 }
@@ -427,6 +444,13 @@
 
             .services__item {
                 margin: 0 30px 30px;
+            }
+
+            .wrapper {
+                position: relative;
+                &:after {
+                    top: -80px;
+                }
             }
         }
     }
@@ -524,6 +548,13 @@
     .services {
         &_mainpage {
             padding: 70px 0 20px;
+
+            .wrapper {
+                &:after {
+                    right: 20px;
+                }
+            }
+
             .services__content {
                 margin: 34px -20px 0;     
             }
@@ -564,7 +595,7 @@
         }
 
         &__item { 
-            margin-bottom: 40px;
+            margin-bottom: 60px;
             width: calc(100% / 2);
 
             &-name {
@@ -597,6 +628,15 @@
 
         &__descr {
             padding: 40px 0;
+
+            .wrapper {               
+    
+                &:after {                    
+                    right: 20px;
+                    top: -55px;                   
+                }
+            }
+
             .services-detail__wrap {
                 display: block;
             }

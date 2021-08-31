@@ -136,7 +136,7 @@
             bottom: 0;
             margin: auto;
             width: 16px;
-            height: 17px;
+            height: 16px;
             background-image: url("../img/icons/arrow-green.png");
             background-size: cover;
         }
@@ -221,13 +221,17 @@
         .wysiwyg {
             color: @darkerBlue;
             padding-left: 72px;
-            position: relative;         
+            position: relative; 
+
+            & > *:first-child {
+                margin-top: 0;
+            }
     
             h2,
             h3,
             h4,
             h5 {
-                margin: 0 0 23px;
+                margin: 38px 0 20px;
                 font-weight: 600;
             }
     
@@ -251,7 +255,7 @@
             ul,
             ol {
                 font-size: 20px;
-                margin: 10px 0 30px;
+                margin: 22px 0 20px;
             }
     
             p,
@@ -413,8 +417,7 @@
                 padding-bottom: 40px;
     
                 &:before {
-                    right: 45px;
-                    bottom: -10px;
+                    display: none;
                 }
             }
         }
@@ -489,6 +492,14 @@
             .wysiwyg {
                 padding-left: 0;
 
+                h2,
+                h3,
+                h4,
+                h5 {
+                    margin: 20px 0 15px;
+                    font-weight: 600;
+                }
+
                 h2 {
                     font-size: 25px;
                 }
@@ -509,7 +520,7 @@
                 ul,
                 ol {
                     font-size: 12px;
-                    
+                    margin: 17px 0 15px;
                 }
 
                 ul {
