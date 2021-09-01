@@ -8,6 +8,70 @@
         &.active {
             display: block;
         }
+
+        &[data-city="spb"] {
+            .contacts__title {
+                color: @green;
+
+                &:before {
+                    background-color: @green;
+                }
+            }
+
+            .contacts__list {
+                &-item {
+                    &.phone {
+                        &:before {
+                            background-image: url("../img/icons/phone.png");
+                        }
+                    }
+        
+                    &.mail {
+                        &:before {
+                            background-image: url("../img/icons/email.png");
+                        }
+                    }
+        
+                    &.address {
+                        &:before {
+                            background-image: url("../img/icons/placeholder.png");
+                        }
+                    }
+                }
+            }
+        }
+
+        &[data-city="mos"] {
+            .contacts__title {
+                color: @violet;
+
+                &:before {
+                    background-color: @violet;
+                }
+            }
+
+            .contacts__list {
+                &-item {
+                    &.phone {
+                        &:before {
+                            background-image: url("../img/icons/phone-violet.png");
+                        }
+                    }
+        
+                    &.mail {
+                        &:before {
+                            background-image: url("../img/icons/email-violet.png");
+                        }
+                    }
+        
+                    &.address {
+                        &:before {
+                            background-image: url("../img/icons/placeholder-violet.png");
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .wrapper {
@@ -21,7 +85,7 @@
     }
 
     &__title {
-        color: @green;
+        //color: @green;
         font-weight: 600;
         font-size: 30px;
         position: relative;
@@ -35,7 +99,7 @@
             top: -8px;
             width: 4px;
             height: 46px;
-            background-color: @green;
+            //background-color: @green;
         }
     }
 
@@ -62,7 +126,7 @@
 
             &.phone {
                 &:before {
-                    background-image: url("../img/icons/phone.png");
+                    //background-image: url("../img/icons/phone.png");
                     width: 21px;
                     height: 20px;
                 }
@@ -70,7 +134,7 @@
 
             &.mail {
                 &:before {
-                    background-image: url("../img/icons/email.png");
+                    //background-image: url("../img/icons/email.png");
                     width: 20px;
                     height: 16px;
                     top: 3px;
@@ -79,7 +143,7 @@
 
             &.address {
                 &:before {
-                    background-image: url("../img/icons/placeholder.png");
+                    //background-image: url("../img/icons/placeholder.png");
                     width: 16px;
                     height: 20px;
                     left: 2px;
@@ -95,6 +159,10 @@
         width: 60%;
         height: 100%;
         z-index: 2;
+
+        .ymaps-2-1-79-ground-pane {
+            filter: grayscale(1);
+        }
     }
 }
 

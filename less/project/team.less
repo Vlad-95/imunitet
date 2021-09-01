@@ -238,11 +238,15 @@
                 background-color: @violet;
             } 
     
+            & > *:first-child {
+                margin-top: 0;
+            }
+    
             h2,
             h3,
             h4,
             h5 {
-                margin: 0 0 23px;
+                margin: 38px 0 20px;
                 font-weight: 600;
             }
     
@@ -266,7 +270,7 @@
             ul,
             ol {
                 font-size: 20px;
-                margin: 10px 0 30px;
+                margin: 22px 0 20px;
             }
     
             p,
@@ -544,8 +548,16 @@
                     margin: 17px 0 15px;
                 }
 
+                ol {
+                    li {
+                        padding-left: 20px;
+                    }
+                }
+
                 ul {
                     li {
+                        padding-left: 20;
+                        
                         &:before {
                             top: 8px;
                             width: 3px;

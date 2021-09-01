@@ -120,14 +120,14 @@ $(document).ready(function() {
             var spbPlacemark = new ymaps.Placemark([59.962908564141586,30.353183999999914], {}, {
                 iconLayout: 'default#image',
                 iconImageHref: 'img/icons/pin.png',
-                iconImageSize: [55, 32],
-                iconImageOffset: [-28, -16]
+                iconImageSize: [80, 47],
+                iconImageOffset: [-40, -37]
             });
             var mosPlacemark = new ymaps.Placemark([55.752612846663226,37.62316081793495], {}, {
                 iconLayout: 'default#image',
                 iconImageHref: 'img/icons/pin.png',
-                iconImageSize: [55, 32],
-                iconImageOffset: [-28, -16]
+                iconImageSize: [80, 47],
+                iconImageOffset: [-40, -37]
             });
 
             spb.geoObjects.add(spbPlacemark);
@@ -138,7 +138,7 @@ $(document).ready(function() {
     }
 
     //одинаковая высота названий новостей
-    if($('.articles-page').length) {
+    if($('.articles-list').length) {
         $('.articles-list__item .articles-list__name').matchHeight();
     }
 
